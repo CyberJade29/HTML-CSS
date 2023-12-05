@@ -1,0 +1,142 @@
+* {
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-image: url('backgroundmodels.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+    height: 100%;
+    margin: 0;
+    width: 100%;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+.Header {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Zorg ervoor dat het boven andere elementen staat */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Align items from the start to the end */
+}
+
+@media (max-width: 900px) {
+    nav ul  {
+        flex-wrap: wrap;
+    }
+}
+
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 8px 16px;
+    margin-right: 38px; 
+}
+
+
+nav ul li a.active {
+    background-color: #555;
+}
+
+.grid-container {
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7px;
+    justify-content: center;    	
+    margin: 6rem 0 2rem 0;   
+    
+}
+
+@media (max-width: 1300px) {
+    .grid-container {
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media (max-width: 850px) {
+    .grid-container {
+        grid-template-columns: 100%;
+        align-items: center;
+    }
+}
+
+#foto1 {
+    height: auto;
+    width: 30rem;
+    border-radius: 20px;
+}
+
+#foto2 {
+    height: auto;
+    width: 30rem;
+    border-radius: 20px;
+}
+
+#foto3 {
+    height: auto;
+    width: 29rem;
+    border-radius: 20px;
+}
+
+#foto4 {
+    height: auto;
+    width: 30rem;
+    border-radius: 20px;
+}
+
+#foto5 {
+    height: auto;
+    width: 30rem;
+    border-radius: 20px;
+}
+
+#foto6 {
+    height: 320px;
+    width: 29rem;
+    border-radius: 20px;
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
+
+
+.info-block {
+    border: 1px solid #FE6601;
+    border-radius: 20px;
+    padding: auto;
+    height: auto;
+    text-align: center;
+    transition: transform 0.3s; /* Voeg een overgang toe voor het vergroten */
+    color:#FE6601;
+    background-color: rgba(0,0,0, 63%);
+}
+
+/* Vergroot het blok wanneer de muis eroverheen gaat */
+.info-block:hover {
+    transform: scale(1.05);
+}
